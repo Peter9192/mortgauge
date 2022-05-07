@@ -17,13 +17,13 @@ jobs:
           node-version: 18.*
 
       - name: Install dependencies
-        run: yarn install
+        run: npm install
 
       - name: Generate static page
-        run: yarn generate
+        run: npm run build
 
       - name: Deploy 🚀
         uses: JamesIves/github-pages-deploy-action@v4.3.3
         with:
           branch: gh-pages
-          folder: .output/public
+          folder: build
