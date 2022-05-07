@@ -22,8 +22,8 @@ jobs:
       - name: Generate static page
         run: yarn generate
 
-      - name: Deploy 🚀
-        uses: JamesIves/github-pages-deploy-action@v4.3.3
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
         with:
-          branch: gh-pages
-          folder: .output/public
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: .output/public
