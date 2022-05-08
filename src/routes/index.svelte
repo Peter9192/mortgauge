@@ -1,5 +1,5 @@
 <script>
-  import Chart from 'chart.js/auto/auto.js';
+  import Chart from 'chart.js/auto/auto.esm';
 	import { onMount } from 'svelte';
 import { xlink_attr } from 'svelte/internal';
 
